@@ -7,7 +7,7 @@ const footerStyle = {
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat',
-  height:"400px"
+  
 };
 
 export default function Footer() {
