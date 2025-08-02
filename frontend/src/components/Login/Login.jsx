@@ -15,7 +15,7 @@ export default function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("https://coffee-blue-seven.vercel.app/auth/login", form);
+      const res = await axios.post("/auth/login", form);
       localStorage.setItem("token", res.data.token);
       setToast({ show: true, message: "Login successful!", type: "success" });
 
