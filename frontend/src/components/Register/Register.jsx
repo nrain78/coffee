@@ -16,7 +16,7 @@ export default function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("/auth/register", form);
+      await axios.post("https://coffee-blue-seven.vercel.app/auth/register", form);
       setShowToast(true);
       setTimeout(() => {
         setShowToast(false);
