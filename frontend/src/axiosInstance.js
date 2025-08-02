@@ -1,6 +1,7 @@
 import axios from 'axios';
 const instance = axios.create({
   baseURL: "https://coffee-blue-seven.vercel.app/api",
+  withCredentials: true,
 });
 
 instance.interceptors.request.use((config) => {
